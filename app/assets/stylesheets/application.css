@@ -1,0 +1,44 @@
+.bg_primary-color {
+    background-color: hsl(0, 0, 100);
+}
+
+.primary-color {
+    background-color: hsl(0, 0, 100);
+}
+
+.bg_secondary-color {
+    color: hsl(218, 23, 21);
+}
+
+.secondary-color {
+    color: hsl(218, 23, 21);
+}
+
+.custom-button.btn {
+    background-color: hsl(218, 23%, 21%);
+    color: hsl(0, 0%, 90%);
+    border: none;
+}
+
+.custom-button.btn:hover {
+    color: hsl(0, 3%, 66%) !important;
+    border: none;
+}
+
+.hero {
+    width: 100vw;
+    height: 50vh;
+}
+
+.hero img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
