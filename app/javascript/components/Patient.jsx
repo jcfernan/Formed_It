@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom';
 class Patient extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {patient: {info: {
+        this.state = {patient: {
             name: "",
             age: "", 
             weight: "", 
             height: "", 
             phonenumber: "", 
-        }}};
+        }};
 
     this.addHtmlEntities = this.addHtmlEntities.bind(this);
     this.deletePatient = this.deletePatient.bind(this)
@@ -69,19 +69,18 @@ fetch(url, {
 }
 
 render() {
-    const { patient } = this.state;
-    let infoList = "No information available";
+    const { patient, name, age, weight, height, phonenumber, history } = this.state;
+    // let infoList = "No information available";
 
-    if (patient.info.length > 0) {
-        infoList = patient.info
+        {infoList = (patient.name, patient.age, patient.weight, patient.phonenumber, patient.history)
         .split(",")
         .map((info, index) => (
             <li key={index} className="list-group-item">
             {info}
             </li>
         ));
-    }
-    const patientInformation = this.addHtmlEntities(patient.info);
+        }
+    const patientInformation = this.addHtmlEntities(patient.name, patient.age, patient.weight, patient.phonenumber, patient.history);
 
     return (
         <div className="">
@@ -105,7 +104,7 @@ render() {
                 </ul>
                 </div>
             <div className="col-sm-12 col-lg-7">
-                <h5 className="mb-2">Preparation infos</h5>
+                <h5 className="mb-2">Information</h5>
                 <div
                 dangerouslySetInnerHTML={{
                     __html: `${patientInformation}`

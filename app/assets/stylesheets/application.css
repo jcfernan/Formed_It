@@ -31,7 +31,7 @@
 }
 
 .hero img {
-    object-fit: cover;
+    object-fit: fill;
     object-position: top;
     height: 100%;
     width: 100%;

@@ -10,7 +10,7 @@ class Patients extends React.Component {
     }
 
     componentDidMount() {
-        const url = "/api/vi/patients/index";
+        const url = "/api/v1/patients/index";
         fetch(url)
             .then(response => {
                 if (response.ok) {

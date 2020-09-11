@@ -83,33 +83,70 @@ import {Link} from 'react-router-dom'
                         required
                         onChange={this.onChange}
                     />
+
                     </div>
                     <div className="form-group">
-                    <label htmlFor="patientInformation">Information</label>
+                    <label htmlFor="patientAge">Age</label>
                     <input
                         type="text"
-                        name="information"
-                        id="patientInformation"
+                        name="age"
+                        id="patientAge"
                         className="form-control"
                         required
                         onChange={this.onChange}
                     />
-                    <small id="patientsHelp" className="form-text text-muted">
-                        Separate information with a comma
-                    </small>
+
                     </div>
-                    <label htmlFor="information">Information</label>
+                    <div className="form-group">
+                    <label htmlFor="patientWeight">Weight</label>
+                    <input
+                        type="text"
+                        name="weight"
+                        id="patientWeight"
+                        className="form-control"
+                        required
+                        onChange={this.onChange}
+                    />
+
+                    </div>
+                    <div className="form-group">
+                    <label htmlFor="patientHeight">Height</label>
+                    <input
+                        type="text"
+                        name="height"
+                        id="patientHeight"
+                        className="form-control"
+                        required
+                        onChange={this.onChange}
+                    />
+                    
+                    </div>
+                    <div className="form-group">
+                    <label htmlFor="patientPhonenumber">Phone Number</label>
+                    <input
+                        type="text"
+                        name="phonenumber"
+                        id="patientPhonenumber"
+                        className="form-control"
+                        required
+                        onChange={this.onChange}
+                    />
+
+                    </div>
+                    <label htmlFor="history">Medical History</label>
                     <textarea
                     className="form-control"
-                    id="information"
-                    name="information"
+                    id="history"
+                    name="history"
                     rows="5"
                     required
                     onChange={this.onChange}
                     />
+
                     <button type="submit" className="btn custom-button mt-3">
                     Create Patient
                     </button>
+                    
                     <Link to="/patients" className="btn btn-link mt-3">
                     Back to patients
                     </Link>

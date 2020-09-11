@@ -34,4 +34,5 @@ class Api::V1::PatientsController < ApplicationController
 
   def patient
     @patient ||= Patient.find(params[:id])
+  end
 end
